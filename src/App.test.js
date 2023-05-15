@@ -1,5 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+
 
 test('renders learn react link', () => {
   render(<App />);

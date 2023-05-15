@@ -1,4 +1,5 @@
 body {
+  background-color: #82aec8;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,58 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Estilos para las filas del tablero */
+.board-row {
+  display: flex;
+}
+
+/* Estilos para las celdas del tablero */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #f2f2f2;
+  border: 1px solid #251212;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilos para las celdas cuando se les pasa el mouse por encima */
+.square:hover {
+  background-color: #d08f8f;
+}
+
+/* Estilos para las celdas cuando se les da clic */
+.square:active {
+  background-color: #90d08f;
+}
+
+/* Estilos para las celdas cuando están seleccionadas */
+.square.selected {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
+
+/* Estilo del botón cuando está deshabilitado */
+.square:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Estilo para el contenedor del tablero */
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para las filas del tablero */
+.board-row {
+  display: flex;
 }
